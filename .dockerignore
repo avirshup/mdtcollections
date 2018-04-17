@@ -1,0 +1,12 @@
+**/*.pyc
+**/*.pyo
+.idea
+dist
+build
+**/*.egg-info
+**/__pycache__
+**/*.bak
+**/.coverage
+**/tokens
+**/codeship.aes
+**/tmp

@@ -1,0 +1,7 @@
+- type: parallel
+  services:
+     - build-3.5
+     - build-3.6
+  steps:
+    - command: py.test
+      name: test

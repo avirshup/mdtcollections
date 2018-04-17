@@ -1,0 +1,11 @@
+build-3.6:
+  build:
+    dockerfile: Dockerfile
+    args:
+      img: python:3.6-alpine
+
+build-3.5:
+  build:
+    dockerfile: Dockerfile
+    args:
+      img: python:3.5-alpine
