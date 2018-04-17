@@ -3,6 +3,7 @@ build-3.6:
     dockerfile: Dockerfile
     args:
       img: python:3.6-alpine
+  encrypted_env_file: tokens.crypt
 
 build-3.5:
   build:

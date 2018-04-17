@@ -5,3 +5,8 @@
   steps:
     - command: py.test
       name: test
+
+
+- service: build-3.6
+  tag: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)((a|rc|b)(0|[1-9]\d*))?$'
+  command: twine upload -u ${PYPIUSER} -p ${PYPITOKEN} dist/mdtcollections-*.tar.gz
