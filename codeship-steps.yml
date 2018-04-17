@@ -9,4 +9,5 @@
 
 - service: build-3.6
   name: deploy
-  command: echo ${PYPIUSER}
+  tag: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)((a|rc|b)(0|[1-9]\d*))?$'
+  command: ./deploy.sh
