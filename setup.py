@@ -46,5 +46,5 @@ setup(
     cmdclass=cmdclass,
     license='Apache 2.0',
     author='Aaron Virshup',
-    author_email='avirshup at gmail',
+    author_email='avirshup+pypi@gmail.com',
     description='Useful collection classes and utilities')
