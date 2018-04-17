@@ -41,7 +41,7 @@ setup(
     version=versioneer.get_version(),
     classifiers=CLASSIFIERS.splitlines(),
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[],
     url='http://github.com/avirshup/mdtcollections',
     cmdclass=cmdclass,
     license='Apache 2.0',
