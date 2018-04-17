@@ -1,5 +1,6 @@
 ARG img=python:3.6-alpine
 FROM ${img}
+RUN apk add --no-cache git
 
 ADD . /opt/mdtcollections
 WORKDIR /opt/mdtcollections
