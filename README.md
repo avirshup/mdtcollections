@@ -4,6 +4,10 @@
 
 Various collection classes factored out from https://github.com/autodesk/molecule-design-toolkit .
 
+```
+pip install mdtcollections
+```
+
 # License
 
 Apache 2.0

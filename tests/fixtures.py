@@ -1,5 +1,5 @@
 import collections
-from mdtcollections import DotDict, Alias
+from mdtcollections import DotDict, Alias, ExclusiveList
 import pytest
 
 registered_types = {}
@@ -38,6 +38,16 @@ class ComposedClass(object):
 @typedfixture('pickleable')
 def class_with_alias():
     return ComposedClass()
+
+
+@typedfixture('pickleable')
+def exclusive_list_by_identity():
+    return ExclusiveList(range(10))
+
+
+@typedfixture('pickleable')
+def exclusive_list_by_len():
+    return ExclusiveList(['a', 'bb'], key=len)
 
 
 pickleable = registered_types['pickleable']
